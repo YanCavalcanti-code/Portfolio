@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+#map { 
+  height: 600px;
+}
+.leaflet-bottom .leaflet-control-scale {
+  margin-bottom: 12px !important;
+}
+
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+  border: 2px solid rgba(0,0,0,0.2);
+  background-clip: padding-box;
+  background-color: white;
+}
+
+.leaflet-bar a.leaflet-disabled {
+  cursor: default;
+  color: white !important;
+}
+.leaflet-control-layers-separator {
+  width: 398px;
+}
+.leaflet-control-layers-expanded{
+  background-color: transparent !important;
+}
+.leaflet-control-layers {
+  border: none !important;
+}
+.leaflet-sidebar-tabs > li, .leaflet-sidebar-tabs > ul > li {
+  font-size: 16pt !important;
+}
+.leaflet-container {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 12px !important;
+  line-height: 1.5;
+}
+#cta {
+  text-align: left;
+}
+#bm{
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.txt_resume{
+  text-align: justify;
+}
+
+/************************************************************************/
+  
+label, legend {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: .1rem;
+}
+.legend_square {
+  padding: 6px 8px;
+  font: 14px Arial, Helvetica, sans-serif;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  /*text-align: center;*/
+  color:#777;
+}
+
+.legend_square i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  /*margin-bottom: 4px;*/
+  opacity: 0.7;
+}
+div.legend_square.leaflet-control br {
+  clear: both;
+}
+/************************************************************************/
+/************************************************************************/
+/* Info Control */
+
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  position: relative;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+  font-size: 14px !important;
+}/************************************************************************/

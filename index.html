@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt">
+
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Yan C. | Portfolio</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+	<!-- Leaflet Map
+   ================================================== -->  
+    <!--import css-->
+    <link rel="stylesheet" href="leaflet/graffiti.css"/>
+	<!--import leaflet-->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+	integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+	crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+	integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+	crossorigin=""></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet"> 
+    <!--Location-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+    <!--Geocoder-Leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <!--Side Bar-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="leaflet/side_bar/leaflet-sidebar.css" />
+    <!--Minimap-->
+    <link rel="stylesheet" href="leaflet/Minimap/Control.MiniMap.css" />
+    <script src="leaflet/Minimap/Control.MiniMap.js" type="text/javascript"></script>
+	<!--GestureHandling-->
+	<link rel="stylesheet" href="leaflet/gesture_hendling/leaflet-gesture-handling.css"/>
+	<script src="leaflet/gesture_hendling/leaflet-gesture-handling.min.js" type="text/javascript"></script>
+    <!--FullScreen-->
+	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+    <!--GroupedLayer Control-->
+    <link href="leaflet/groupedlayercontrol/leaflet.groupedlayercontrol.css" />
+    <script src="leaflet/groupedlayercontrol/leaflet.groupedlayercontrol.js"></script>
+    <!--Osm 3D Building-->
+    <script src="https://cdn.osmbuildings.org/classic/0.2.2b/OSMBuildings-Leaflet.js"></script>
+	<!--Clusters-->
+	<link rel="stylesheet" href="leaflet/cluster/MarkerCluster.css" />
+	<link rel="stylesheet" href="leaflet/cluster/MarkerCluster.Default.css" />
+	
+	<!-- Chart Js
+   ================================================== -->
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="y.png">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
+
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+	   		<div class="logo">
+		         <p><b>MENU</b></p>
+		    </div>		      
+
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Início</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">Sobre</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Histórico</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll"  href="#services" title="">Serviços</a></li>					
+						<li><a class="smoothscroll"  href="#contact" title="">Contacto</a></li>	
+						<!--<li><a href="styles.html" title="">Style Demo</a></li>-->				
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
+
+   	<div class="intro-overlay"></div>	
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+
+	   			<h5>Bem Vindo a Página</h5>
+	   			<h1>Yan Cavalcanti</h1>
+
+	   			<p class="intro-position">
+	   				<span>Geógrafo</span>
+	   				<span> Técnico & Desenvolvedor SIG</span> 
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">Mais Informações</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+
+         <li><a href="https://www.linkedin.com/in/yan-cavalcanti/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+         <li><a href="https://github.com/YanCavalcanti-code"><i class="fab fa-github"></i></a></li>
+
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Sobre</h5>
+   			<h1>Introdução Curricular</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/perfil_2.jpeg" alt="Profile Picture">
+
+   				<p class="lead">Geógrafo e Mestre em Sistemas de Informação Geografica, com experiência na área de planeamento de terrtório e desenvolvimento de WebSIGs. Já atuou como técnico pela Câmara Municipal de Matosinhos e investigador pelo projeto CANVAS, financiado pela FCT.</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Perfil</h3>
+   			<p>Apto para trabalhar em todas as áreas da Geografia, com ênfasa no ordenamento de espaços urbanos e sustentabilidade ambiental. Possui experiência em trabalhos de campo e apresenta bons relacionamentos em equipa.</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Nome Completo:</strong>
+   					<span>Yan Souza Cavalcanti</span>
+   				</li>
+   				<li>
+   					<strong>Nascimento:</strong>
+   					<span>01 de agosto de 1994</span>
+   				</li>
+   				<li>
+   					<strong>Nacionalidade:</strong>
+   					<span>Portuguesa e Brasileira</span>
+   				</li>
+				<li>
+					<strong>Carta de Condução:</strong>
+					<span>B e B1</span>
+				</li>
+				<li>
+					<strong>Email:</strong>
+					<span>yancavalcanti@gmail.com</span>
+				</li>
+				<li>
+					<strong>Telemóvel:</strong>
+					<span>+351 926 598 531</span>
+				</li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Domínios Técnicos</h3>
+   			<p>Nível de experiência adiquirido com as ferramentas, durante o percurço académico e profissional de formação.</p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent100"><span>99%</span></div>
+				   	<strong>ArcGIS/QGIS</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>JavaScript</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>HTML&CSS</strong>
+				   </li>
+				   <li>
+					<div class="progress percent65"><span>65%</span></div>
+					<strong>Python</strong>
+					</li>
+					<li>
+					<div class="progress percent70"><span>70%</span></div>
+					<strong>Geoserver</strong>
+					</li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>PostGreeSQL</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent100"><span>99%</span></div>
+				   	<strong>Microssoft Office</strong>
+				   </li>
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="document/CV_YanCavalcanti.pdf" target="_blank" title="Abrir CV" class="button button-primary" download>Europass</a>
+   			<a href="https://www.cienciavitae.pt//pt/851D-D215-F463" target="_blank" title="Abrir CV" class="button button-primary">Ciência Vitae</a>
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Histórico</h5>
+   			<h1>Credenciais Adquiridas</h1>
+
+   			<p class="lead">Tragetória académica e profissional que crendencia os conhecimentos teóricos e práticos expostos na descrição curricular.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Experiência Profissional</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+						<i class="fas fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Desenvolvedor WebSIG</h3>
+	   					<p>Nov 2021 - Ago 2022</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>CANVAS<br><small>Crime and Violence Prevention through Smart Planning and Artistic Resistence</small></h4>
+	   					<p>Responsável pela programação de aplicativos SIGs para ambiente web, destinado a georreferenciação e análise espacial dos crimes registados pela Polícia de Segurança Pública (PSP) nos municípios de Lisboa, Porto e Albufeira. Participou diretamente no trabalho investigação sobre os padrões geográficos da criminalidade nos municípios e compareceu em reuniões com os órgãos de segurança pública locais.</p>
+								<p>
+									<i class="fas fa-link"></i>&nbsp;<a href="https://projetocanvas.pt/" target="_blank">CANVAS</a>
+									<br>Referência: <small>POCI-01-0145-FEDER-030748  02/SAICT/2017</small>
+								</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+						<i class="fas fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Estagiário</h3>
+	   					<p>Out 2020 - Jan 2021</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Câmara Municipal de Matosinhos</h4>
+	   					<p>Atuou no Departamento de Gestão Urbanística da CM, onde pode realizar trabalhos de preechimento e gestão de banco de dados geográficos, desenvolvimento de mapas interativos em JavaScript para plataforma web, assim como elaboração de propostas para renumeração predial.</p>
+						   <table>
+							<tr>
+								<td>
+									<i class="fas fa-link"></i>&nbsp;<a href="https://www.cm-matosinhos.pt/" target="_blank">CM Matosinhos</a>
+								</td>
+								<td>
+									<i class="far fa-file-pdf"></i>&nbsp;<a href="document/Relatorio-Estagio.pdf" target="_blank" download>Relatório de Estágio</a>
+								</td>
+							</tr>
+						</table>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Formação Académica</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+						<i class="fas fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Mestrado em SIG</h3>
+	   					<p>Set 2019 - Set 2021</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Faculdade de Letras e Faculdade de Ciências da Universidade do Porto</h4>
+	   					<p>Tornou-se mestre em Sistemas de Informação Geográfica e Ordenamento de Território pelas faculdades, onde se dedidou ao estudo e análise espaço temporal dos crimes registados no Porto, formulando a dissertação, que obteve 19 valores.</p>
+						<table>
+							<tr>
+								<td>
+									<i class="fas fa-link"></i>&nbsp;<a href="https://sigarra.up.pt/flup/pt/cur_geral.cur_view?pv_curso_id=461" target="_blank">FLUP-MSIGOT</a>
+								</td>
+								<td>
+									<i class="far fa-file-pdf"></i>&nbsp;<a href="https://repositorio-aberto.up.pt/handle/10216/139267" target="_blank">Dissertação</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<i class="far fa-file-certificate"></i>&nbsp;<a href="document/Sup_Diploma_Mestrado.pdf" target="_blank" download>Histórico</a>
+								</td>
+								<td>Média Final: 17</td>
+							</tr>
+						</table>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+	   			
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="far fa-university"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Aluno Bolsista PET</h3>
+						<p>Ago 2014 - Ago 2018</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Programa de Educação Tutoria (PET)</h4>
+						<p>Participou como aluno bolsista do programa, realizado na Pontifícia Universidade Católica do Rio de Janeiro, onde foi submetido a prática de leituras e apresentações periódicas de pesquisas. Financiado pelo Ministério da Educação do Brasil, o programa visa promover o ensino, a pesquisa e a extenção do aluno em eventos académicos, com apoio de um tutor.</p>
+						<table>
+							<tr>
+								<td>
+									<i class="fas fa-link"></i>&nbsp;<a href="http://portal.mec.gov.br/pet" target="_blank">PET</a>
+								</td>
+								<td>
+									<i class="far fa-file-certificate"></i>&nbsp;<a href="document/Certificado_PET.pdf" target="_blank" download>Certificado</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+				</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+						<i class="fas fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bacharel e Licenciado em Geografia</h3>
+	   					<p>Ago 2013 - Ago 2018</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Pontifícia Universidade Católica do Rio de Janeiro</h4>
+	   					<p>Fourmou-se como investigador e professor escolar de Geografia, obtendo reconhecimento da titulação pela Universidade do Porto. Durante a formação, voltou-se ao estudo sobre planeamento urbano, formulando o trabalho de conclusão de curso sobre uso de áreas de favela como instrumento ao mercado turístico e imobiliário na cidade do Rio, durante os anos em que foi sede dos megaeventos esportivos Copa do Mundo FIFA 2014 e as Olimpíadas Rio2016.</p>
+						<table>
+							<tr>
+								<td>
+									<i class="fas fa-link"></i>&nbsp;<a href="https://www.puc-rio.br/ensinopesq/ccg/geografia_bacharelado.html#profissional" target="_blank">PUC-Rio</a>
+								</td>
+								<td>
+									<i class="far fa-file-pdf"></i>&nbsp;<a href="document/Monografia_Graduação.pdf" target="_blank" download>Monografia</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<i class="far fa-file-certificate"></i>&nbsp;<a href="document/Histórico_Graduação.pdf" target="_blank" download>Histórico</a>
+								</td>
+								<td>Média Final: 16</td>
+							</tr>
+						</table>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Portfolio</h5>
+   			<h1>Projetos Realizados</h1>
+
+   			<p class="lead">Conjunto dos principais trabalhos profissionais e académicos já desenvolvidos.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/cont.jpg" alt="Liberty">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">SIGCANVAS</h3>	     					    
+		     					    	 <span class="folio-types">
+		     					       	  Ferramenta de Apoio a Decisão
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/stc.jpg" alt="Shutterbug">
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Dissertação</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Mestrado | Trabalho Final
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/upps_map.jpg"alt="Clouds">
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Monografia</h3>	     					    
+		     					    <span class="folio-types">
+		     					       	Graduação | Trabalho Final
+		     					    </span>		     		
+		     				</div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/dash.jpg" alt="Beetle">
+	                  <a href="#modal-04" class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Dashboard</h3>	     					    
+		     					    <span class="folio-types">
+		     					       	Estágio | CM Matosinhos
+		     					    </span>		     		
+		     				</div>  	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->     
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/banner.jpg" alt="Lighthouse">
+	                  <a href="#modal-05" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Cidades Sustentáveis</h3>	     					    
+		     					    <span class="folio-types">
+		     					       	Projeto de requalificação urbana
+		     					    </span>		     		
+		     				</div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/dem3.jpg" alt="Salad">
+	                  <a href="#modal-06" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Análise de Riscos</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Levantamento topográfico e modelagem 3D
+		     					      </span>		     		
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->   
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/sigcanvas.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>SIGCANVAS</h4>		      
+					      <p>O sistema foi criado no âmbito do projeto CANVAS, com apoio da FCT e de entidades de segurança pública do Estado, como a PSP e a Polícia Municipal, com o objetivo de constiuir uma ferramenta para o manitoramento e análise temporal da criminalidade registada no país, foncando-se nas três principais cidades com maior índice de ocorrências: Porto, Lisboa e Albufeira.</p>	               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://projetocanvas.pt/?lang=en" target="_blank">Mais Detalhes</a>
+					      <a href="#" class="popup-modal-dismiss">Fechar</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/stc.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Dissertação</h4>		      
+					      <p>A pesquisa teve como objetivo, realizar analises espaciotemporais dos padrões referentes a criminalidade registada no município do Porto entre 2009 e 2018, com base em dados oficiais da PSP, georreferenciados a microescala dos segmentos de via.</p>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://repositorio-aberto.up.pt/handle/10216/139267" target="_blank">Mais Detalhes</a>
+					    <a href="#" class="popup-modal-dismiss">Fechar</a>
+			         </div>		      
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/upps_map.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Monografia</h4>		      
+					      <p>Trabalho de conclusão de curso da graduação, no qual foram investigadas as estratégias de lucro do mercado turístico e imobiliário, em áreas de favela, durante os anos em que a cidade do Rio de Janeiro foi sede dos megaeventos esportivos Copa do Mundo FIFA 2014 e Olimpíadas Rio2016. </p>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="document/Monografia_Graduação.pdf" download>Mais Detalhes</a>
+					      <a href="#" class="popup-modal-dismiss">Fechar</a>
+			         </div>		      
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/dash.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Dashboard - Estágio</h4>		      
+					      <p>Desenvolvimento de dashboard interativo a partir da ferramenta ArcGIS Pro, com base em dados coletados no travelBI, a respeito dos serviços turísticos presentes no município de Matosínhos. O projeto teve como objetivo o diagnóstico sobre distribuição espacial dos serviços e suas qualificações, bem como o armazenamento de informações ao banco de dados da instituição.</p>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://uporto.maps.arcgis.com/apps/opsdashboard/index.html#/7b897d31d68c46de99df1beb1f266c0c" target="_blank">Mais Detalhes</a>
+					      <a href="#" class="popup-modal-dismiss">Fechar</a>
+			         </div>		      
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/sust.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Investigação</h4>		      
+					      <p>Trabalho desenvolvido no âmbito da unidade curricular de Cidades e Sustentabilidade Ambiental, durante o curso de mestrado em SIG e OT. O projeto realizado em equipa, buscou apurar as deficiências urbanísticas e socias de Quebrantões, com o objetivo de propor estratégias de requalificação do território.</p>
+
+					      <div class="categories">
+							<a href="https://sigarra.up.pt/flup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=438930" target="_blank" download><i class="fas fa-link"></i>&nbsp;Unidade Curricular</a>
+							</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="document/CS_Banner.pdf" target="_blank" download="">Mais Detalhes</a>
+					      <a href="#" class="popup-modal-dismiss">Fechar</a>
+			         </div>		      
+
+				   </div> <!-- /modal-05 -->
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/dem2.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Análise de Riscos Naturais</h4>		      
+					      <p>Desenvolveu trabalhos curriculares de análise físico ambiental, envolvendo os procedimentos de coleta e processamento de dados topográficos, criação de modelos tri dimencionais e cartografia de risco de incêndios, conforme feito no caso de estudos de Leiria.</p>		               
+					   </div>
+					   
+			         <div class="link-box">
+			            <a href="document/AEOT_Relatorio.pdf" download>Mais Detalhes</a>
+					      <a href="#" class="popup-modal-dismiss">Fechar</a>
+			         </div>		      
+
+				   </div> <!-- /modal-06 -->
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
+
+   		</div>  <!-- /twelve -->   
+
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+
+
+	<!-- CTA Section -- Map Leaflet
+   ================================================== -->
+	<section id="cta" class="grey-section">
+
+	<!-- optionally define the sidebar content via HTML markup -->
+    <div id="sidebar" class="leaflet-sidebar collapsed">
+
+        <!-- nav tabs -->
+        <div class="leaflet-sidebar-tabs">
+            <!-- top aligned tabs -->
+            <ul role="tablist">
+                <li><a href="#home" role="tab" title="GIS_Art"><i class="fa fa-bars active"></i></a></li>
+                <li><a href="#autopan" role="tab" title="Control Layers"><i class="fas fa-layer-group"></i></a></li>
+                <li><a href="#chart" role="tab" title="Statistic"><i class="fas fa-chart-bar"></i></a></li>
+            </ul>
+
+            <!-- bottom aligned tabs -->
+            <!--<ul role="tablist">
+                <li><a href="https://github.com/nickpeihl/leaflet-sidebar-v2"><i class="fa fa-github"></i></a></li>
+            </ul>-->
+        </div>
+
+        <!-- panel content -->
+        <div class="leaflet-sidebar-content">
+            <div class="leaflet-sidebar-pane" id="home">
+                <h1 class="leaflet-sidebar-header">
+                    GIS_ART
+                    <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+				<br>
+                <p class="txt_resume">
+                    &nbsp;GIS_ART is an independent, non-profit project; created with the purpose
+                    to locate and analyze the geographic distribution of urban art murals
+                    present in the municipality of Porto in 2022. The mapping work took place
+                    based on the collection of the coordinates of each mural, obtained in field work,
+                    using the ArcGIS Survey 123 tool and Google Maps. In the work of data collection,
+					 the exclusive selection of graphic graffiti was used as a criterion, that is,
+					  animations, abstract and realistic arts. Signatures and other
+					 works present in civil construction sidings were not adhered to in the selection.
+					 Both the project and the material generated in its production can serve as
+					 important tools in the work of public planners and agents of the local tourist market,
+					  aimed at enhancing the municipal artistic heritage.
+					  <br>
+					  It is important to point out that the data represented are not absolute, as they are
+					   a representation of reality. In such a way, the generated database needs constant updates,
+					    due to the changes that occur, whether in the emergence of new artistic works or at the end of them.
+						 Therefore, the present cartography seeks to approach numerically and spatially the facts, with margins
+						  for small distortions and insufficient data.
+                </p>
+            </div>
+
+            <div class="leaflet-sidebar-pane" id="autopan">
+                <h1 class="leaflet-sidebar-header">
+                    Layer Control
+                    <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+                <p id="bm"><b>&nbsp; Base Maps</b></p>
+            </div>
+
+            <div class="leaflet-sidebar-pane" id="chart">
+                <h1 class="leaflet-sidebar-header">
+                    Statistic
+                    <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+				<br>
+				<div>
+					<canvas id="myChart"></canvas>
+				</div>
+				<script>
+					const data = {
+						labels: [
+							'Cedofeita',
+							'Santo Idefonso',
+							'Miragaia',
+							'São Nicolau',
+							'Vitória',
+							'Sé',
+							'Paranhos',
+							'Campanhã',
+							'Bonfim',
+							'Lordelo do Ouro',
+							'Massarelos',
+							'Ramalde',
+							'Aldoar',
+							'Foz do Douro',
+							'Nevolgilde'
+						],
+						datasets: [{
+							label: 'Total Graffitis in Freguesia',
+							data: [22, 19, 12, 12, 10, 6, 4, 4, 4, 2, 1, 1, 1, 0, 0],
+							fill: true,
+							backgroundColor: 'rgba(255, 99, 132, 0.2)',
+							borderColor: 'rgb(255, 99, 132)',
+							pointBackgroundColor: 'rgb(255, 99, 132)',
+							pointBorderColor: '#fff',
+							pointHoverBackgroundColor: '#fff',
+							pointHoverBorderColor: 'rgb(255, 99, 132)'
+						}]
+					};
+
+					const config = {
+						type: 'radar',
+						data: data,
+						options: {
+							elements: {
+								line: {
+									borderWidth: 3
+								}
+							}
+						},
+					};
+				</script>
+				<script>
+					const myChart = new Chart(
+					  document.getElementById('myChart'),
+					  config
+					);
+				</script>
+				<p>Top 5 artists with the highest number of works in the territory</p>
+				<div>
+					<canvas id="myChart2"></canvas>
+				</div>
+				<script>
+					const data2 = {
+						labels: [
+							'Hazul',
+							'Mesk',
+							'Fedor',
+							'Costah',
+							'Mr. Dheo'
+						],
+						datasets: [{
+						label: 'My First Dataset',
+						data: [14, 10, 5, 3, 3],
+						backgroundColor: [
+							'rgb(54, 162, 235)',
+							'rgb(75, 192, 192)',
+							'rgb(255, 205, 86)',
+							'rgb(201, 203, 207)',
+							'rgb(255, 99, 132)'
+							]
+						}]
+					};
+					const config2 = {
+						type: 'polarArea',
+						data: data2,
+						options: {}
+					};
+				</script>
+				<script>
+					const myChart_authors = new Chart(
+					  document.getElementById('myChart2'),
+					  config2
+					);
+				</script>
+            </div>
+        </div>
+    </div>	
+	<div id="map">i</div>
+
+	<!--Plugin-->
+    <script src="leaflet/heat/leaflet-heat.js"></script>
+    <script src="leaflet/cluster/leaflet.markercluster-src.js"></script>
+    <script src="leaflet/side_bar/leaflet-sidebar.js"></script>
+    <!--geojson-->
+    <script src="leaflet/geojson/CAOP_BGRI.js"></script>
+    <script src="leaflet/geojson/BGRI_Porto.js"></script>
+    <script src="leaflet/geojson/COS_Porto.js"></script>
+    <script src="leaflet/geojson/data.js"></script>
+    <script src="leaflet/geojson/al_porto.js"></script>
+	<script src="leaflet/geojson/graffiti_store.js"></script>
+    <!--projeto-->
+    <script src="leaflet/graffiti.js"></script>
+
+   </section> <!-- /cta --> 
+
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Serviços</h5>
+   			<h1>Como Posso Cooperar?</h1>
+
+   			<p class="lead">Resumo de competências técnicas para o desenvolvimento de projetos e proeficiência conjunto as equipas de trabalho.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row services-content">
+
+   		<div id="owl-slider" class="owl-carousel services-list">
+
+	      	<div class="service">	
+
+	      		<span class="icon"><i class="far fa-globe-europe"></i></span>            
+
+	            <div class="service-content">	
+
+	            	 <h3>Geoprocessamento</h3>
+
+		            <p class="desc">Operacionalização de dados espaciais com base nos SIGs, para o levantamento, georreferenciação, edição, processamento e análise geográfica das informações. Aplicação das ferramentas para os mais diferentes tipos de dados, incluindo estatísticas, sensoriamento remoto e topografia.
+	         		</p>
+	         		
+	         	</div> 	         	 
+
+				</div> <!-- /service -->
+
+				<div class="service">	
+
+					<span class="icon"><i class="far fa-browser"></i></span>                          
+
+	            <div class="service-content">	
+
+	            	<h3>Desenvolvedor Web</h3>  
+
+		            <p class="desc">Programação de aplicativos SIG para a publicação na internet, através de ferramentas opensource. Transposição de dados geográficos e análises espaciais para mapas interativos, capazes de proporcionar ao cliente uma experiência de fácil e rápido acesso às informações publicadas.
+	         		</p>
+
+	            </div>	                          
+
+			   </div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="fas fa-search"></i></span>		            
+
+	            <div class="service-content">
+
+	            	<h3>Investigação</h3>
+
+		            <p class="desc">Realização de pesquisas científicas na área de ciências humanas, de modo a contribuir no estudo e análise geográfica dos fenómenos investigados. Adequação do trabalho de pesquisa aos procendimentos científicos e metodológicos, no âmbito exploratório e de apresentação ou publicação do trabalho.  
+	        			</p> 
+
+	            </div> 	            	               
+
+			   </div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="far fa-database"></i></span>	              
+
+	            <div class="service-content">
+
+	            	<h3>Base de Dados</h3>
+
+		            <p class="desc">Gerenciamento e estruturação de banco de dados geográficos em diferentes níveis, envolvendo tanto o trabalho de criação do banco, coleta e tratamento das informações, quanto a correlação entre os bancos, a partir de ferramentas como PostGreeSQL e ArCatalog.  .
+	         		</p> 
+	         		
+	            </div>                
+
+				</div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="fas fa-chart-bar"></i></span>	            
+
+	            <div class="service-content">
+
+	            	<h3>Estatística</h3>
+
+		            <p class="desc">Apuração estatística, com apoio dos SIGs, para descrição e análise espacial dos territórios, através de diagnósticos temporais, que podem considerar cálculos de densidade, identificação de hot spots e geração de índices para contrução de modelos preditivos, podendo ser apoiados pela produção de dashboards.
+	        			</p> 
+
+	            </div>	               
+
+			   </div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="far fa-map"></i></span>	   	           
+
+	            <div class="service-content">
+
+	            	 <h3>Cartografia</h3>
+
+		            <p class="desc">Elaboração de mapas temáticos para representação e estudo de dados espaciais, com o objetivo de auxiliar no trabalho de planeamento e ordenamento de território, tanto no âmbito social quanto geofísico. Servindo assim na orientação de políticas públicas e na exposição de conhecimentos científicos.
+	        			</p> 
+	        			
+	            </div>	               
+
+			   </div> <!-- /service -->
+
+	      </div> <!-- /services-list -->
+   		
+   	</div> <!-- /services-content -->
+		
+	</section> <!-- /services -->	
+
+
+	<!-- stats Section
+   ================================================== -->
+	<section id="stats" class="count-up">
+
+		<h1>Competências Linguísticas</h1>
+		<table>
+			<tr>
+				<td>
+					Idiomas
+				</td>
+				<td>
+					Compreensão oral
+				</td>
+				<td>
+					Leitura
+				</td>
+				<td>
+					Escrita
+				</td>
+				<td>
+					Interação Oral
+				</td>
+				<td>
+					Produção Oral
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Inglês
+				</td>
+				<td>
+					B1
+				</td>
+				<td>
+					B2
+				</td>
+			</tr>
+		</table>
+	</section>
+	<!-- /stats -->
+
+	
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contacto</h5>
+   			<h1>Informações para Contacto</h1>
+
+   			<p class="lead">Disponível em todos os dias da semana, podendo ser também contactado via Zoom, Skype ou mensagens de WhatsApp</p>
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+
+
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+				<i class="fas fa-home"></i>
+   			</div>
+
+   			<h5>Endereço</h5>
+
+   			<p>
+            Rua Fransisco Sá Carneiro, 22<br>
+            Santa Maria da Feira, Aveiro<br>
+            (4520-164)
+            </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+				<i class="fas fa-envelope"></i>
+   			</div>
+
+   			<h5>E-mail</h5>
+
+   			<p>yancavalcanti@gmail.com</p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+				<i class="fas fa-phone"></i>
+   			</div>
+
+   			<h5>Telemóvel</h5>
+
+   			<p>+351 926 598 531</p>
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">        
+			      <li><a href="https://www.linkedin.com/in/yan-cavalcanti/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+			      <li><a href="https://github.com/YanCavalcanti-code" target="_blank"><i class="fab fa-github"></i></a></li>
+			   </ul> 
+	      		
+	      </div>
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+				<span>© Copyright Kards 2016.</span> 
+				<span>Design adaptado de <a href="http://www.styleshout.com/">styleshout</a></span>	         		         	
+		         </div>		                  
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <!--Page-->
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
