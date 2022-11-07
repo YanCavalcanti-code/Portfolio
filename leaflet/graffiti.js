@@ -140,7 +140,7 @@ var graffiti = new L.geoJson(art,{
 });
 var cluster_graffiti = L.markerClusterGroup();
 //map.addLayer(markers_CPatrimonio);		// add it to the map
-cluster_graffiti.addLayer(graffiti);
+cluster_graffiti.addLayer(graffiti).addTo(map);
 
 //_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 //_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
@@ -155,7 +155,7 @@ var art_heat_porto = L.geoJson(art,{
 var heat_graffiti = L.heatLayer(art_heat,{
   radius: 20,
   max:0.2,
-}).addTo(map);
+});
 
 //Legend
 
@@ -179,7 +179,6 @@ let legend_heat = L.control({position: "bottomright"});
       return div;
   
   };
-legend_heat.addTo(map);
 
 map.on('overlayadd', function (eventLayer) {
     if (eventLayer.name === 'Hot Spots Art') {
