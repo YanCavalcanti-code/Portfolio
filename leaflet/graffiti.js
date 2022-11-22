@@ -426,27 +426,63 @@ info_cos.onAdd = function (map) {
 // method that we will use to update the control based on feature properties passed
 
 info_cos.update = function (props) {
-  this._div.innerHTML = '<h4>Carta de Ocupação do Solo 2018</h4>' +  (props ?
+  this._div.innerHTML = '<h4>Land Cover 2018</h4>' +  (props ?
   '<b>Class:</b> ' + props.COS2018_Lg + '<br/> <b>Area:</b> ' + props.Area_ha + ' ha<br/> '
   : 'Hover over a layer');
 };
 
 map.on('overlayadd', function (eventLayer) {
-  if (eventLayer.name === 'COS (2018)') {
+  if (eventLayer.name === 'Land Cover') {
   info_cos.addTo(this); 
 }});
 map.on('overlayremove', function (eventLayer) {
-  if (eventLayer.name === 'COS (2018)') {
+  if (eventLayer.name === 'Land Cover') {
   this.removeControl(info_cos);
 }});
 
+//_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+//_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// DEM
 
-var marker_0 = L.marker([0,0]);
+var topo_raster = L.imageOverlay ('leaflet/geojson/Topo_Raster.png', [[41.1383506797128007, -8.6912940694204384],[41.1859353051988961, -8.5526134550583333]], {opacity:0.8});
 
+// Legend
+
+let legend_topo = L.control({position: "bottomright"});
+
+  // Function that runs when legend is added to map
+  legend_topo.onAdd = function() {
+  
+      // Create <div> element and populate it with HTML
+      let div = L.DomUtil.create("div", "legend_square");        
+      div.innerHTML = 
+          '<b>Elevation</b><br>' +
+          '<small>Meters</small><br>' +
+          '<i style="background-color: red"></i>163,555<br>' +
+          '<i style="background-color: orange"></i>119,411<br>' +
+          '<i style="background-color: yellow"></i>75,167<br>' +
+          '<i style="background-color: #A5DF00"></i>44,244<br>' +
+          '<i style="background-color: green"></i>-13,321<br>';
+  
+      // Return the legend <div> containing the HTML content
+      return div;
+  
+  };
+
+  map.on('overlayadd', function (eventLayer) {
+    if (eventLayer.name === 'Elevation') {
+    legend_topo.addTo(this); 
+  }});
+  map.on('overlayremove', function (eventLayer) {
+    if (eventLayer.name === 'Elevation') {
+    this.removeControl(legend_topo);
+  }});
 
 //_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 //_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 // Layer Control
+
+var marker_0 = L.marker([0,0]);
 
 var baseMaps = {
   "Mapbox - Light Map": white,
@@ -461,8 +497,9 @@ var overlayMaps = {
   },
   "<b>Data Complement</b>":{
     "Graffiti Stores": graffiti_store,
-    "COS (2018)": ocupsolo,
+    "Land Cover": ocupsolo,
     "Population": population,
+	"Elevation": topo_raster,	  
     "3D City Map": osmb
   } 
 };
