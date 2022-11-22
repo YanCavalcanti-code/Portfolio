@@ -493,7 +493,7 @@ L.control.scale().addTo(map);
 // create the sidebar instance and add it to the map
         var sidebar = L.control.sidebar({ container: 'sidebar' })
             .addTo(map)
-            .open('home');
+            .open('autopan');
 
 
         // be notified when a panel is opened
