@@ -319,9 +319,8 @@ table {
 	font-family: "lora-regular", sans-serif;
 }
 th, td {
-	padding: 1.5rem 3rem;
+	padding: 1.5rem 0rem;
 	text-align: left;
-	border-bottom: 1px solid #E8E8E8;
 }
 th {
 	color: #313131;
