@@ -298,7 +298,7 @@ function onEachFeature(feature, layer) {
   let cod_sub = feature.properties.BGRI2021;
   let area = feature.properties.Area_ha;
   let perim = feature.properties.Perimetro;
-  layer.bindPopup('<p><b>Subsecção:</b> ' + cod_sub + '</p><h4>Census Date - INE</h4><table><tr><td></td><td><b>2021</b></td><td></td><td><b>2011</b></td></tr><tr><tr><td>Buildings:</td><td>' + edif_21 + '</td><td></td><td>' + edif_11 + '</td></tr><tr><td>Accommodation:</td><td>' + aloj_21 + '</td><td></td><td>' + aloj_11 + '</td></tr><tr><tr><td>Residents:</td><td>' + hab_21 + '</td><td></td><td>' + hab_11 + '</td></tr><tr><td>Population/km²:</td><td>' + dens_pop21 + '</td><td></td><td>' + dens_pop11 + '</td></tr></tr></table><h4> Geometry</h4><p>Area: ' + area + ' ha &nbsp; Perimeter: ' + perim + ' m</p><p><strong>Source:</strong> Base Geográfica de Referênciação de Informação (BGRI-2011/2021)</p>', {maxHeight: 225})  
+  layer.bindPopup('<p><b>Subsection:</b> ' + cod_sub + '</p><h4>Census Date - INE</h4><table><tr><td></td><td><b>2021</b></td><td></td><td><b>2011</b></td></tr><tr><tr><td>Buildings:</td><td>' + edif_21 + '</td><td></td><td>' + edif_11 + '</td></tr><tr><td>Accommodation:</td><td>' + aloj_21 + '</td><td></td><td>' + aloj_11 + '</td></tr><tr><tr><td>Residents:</td><td>' + hab_21 + '</td><td></td><td>' + hab_11 + '</td></tr><tr><td>Population/km²:</td><td>' + dens_pop21 + '</td><td></td><td>' + dens_pop11 + '</td></tr></tr></table><h4> Geometry</h4><p>Area: ' + area + ' ha &nbsp; Perimeter: ' + perim + ' m</p><p><strong>Source:</strong> Base Geográfica de Referênciação de Informação (BGRI-2011/2021)</p>', {maxHeight: 225})  
 }
 
 var population = L.geoJson(bgri, {
